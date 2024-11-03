@@ -69,7 +69,7 @@ links:                        # Custom links to add to the top bar
                               # See also: footer.links
 - text: Website
   link: https://devvyy.xyz
-  icon: home
+  icon: assets/Favicon.png
 
   iconAlign: left
   target: blank
