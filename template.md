@@ -29,10 +29,12 @@ expanded: true # boolean for if the pages folder should be open or collapsed
 This is a sample template page. You can use this as a starting point for creating new pages in your project.
 
 ### Table of Contents
-- [Introduction](#introduction)
-- [Usage](#usage)
-- [Examples](#examples)
-- [Conclusion](#conclusion)
+- [Welcome to the Template Page](#welcome-to-the-template-page)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Usage](#usage)
+  - [Examples](#examples)
+  - [Conclusion](#conclusion)
 
 ### Introduction
 Provide an introduction to the template page here. Explain the purpose and any relevant background information.
@@ -47,3 +49,4 @@ Provide examples of how this template can be used. Include code snippets or scre
 Summarize the key points of the template page. Include any final thoughts or recommendations.
 
 Feel free to customize this template to fit your needs.
+ test
