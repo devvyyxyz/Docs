@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.787038013679">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.787038761978">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -33,12 +33,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../assets/icon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.6.0.787038013679" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.6.0.787038761978" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.787038013679" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.787038761978" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.787038013679" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.6.0.787038013679" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.787038761978" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.6.0.787038761978" defer></script>
 
     <style>
         .red {
@@ -509,6 +509,165 @@
     </h3>
 </doc-anchor-target>
 <p>Discord imposes size limits on API requests and attachments. This error occurs when the payload exceeds these limits.</p>
+<p>Here’s a detailed section for the provided error:</p>
+<hr>
+<doc-anchor-target id="error-unhandled-rejection-typeerror-cannot-read-properties-of-undefined-reading-createmessage">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#error-unhandled-rejection-typeerror-cannot-read-properties-of-undefined-reading-createmessage">#</doc-anchor-trigger>
+        <span>Error: <code v-pre>Unhandled Rejection TypeError: Cannot read properties of undefined (reading 'createMessage')</code></span>
+    </h2>
+</doc-anchor-target>
+<p>When attempting to send a message to a channel, you may encounter the following error:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">Unhandled Rejection TypeError: Cannot read properties of undefined (reading 'createMessage') 
+    at Object.getChannel (D:\Steam\steamapps\common\Bot Maker For Discord\bot.js:767:28) 
+    at D:\Steam\steamapps\common\Bot Maker For Discord\AppData\Actions\sendmessage.js:1433:38 
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="solution-9">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#solution-9">#</doc-anchor-trigger>
+        <span>Solution</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li>Verify that the channel ID being used is valid and corresponds to an existing channel in your server.</li>
+<li>Ensure the bot is in the server where the channel exists and has sufficient permissions to access the channel.</li>
+</ol>
+<doc-anchor-target id="reason-9">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#reason-9">#</doc-anchor-trigger>
+        <span>Reason</span>
+    </h3>
+</doc-anchor-target>
+<p>This error occurs because the <code v-pre>getChannel</code> method is returning <code v-pre>undefined</code> or a non-channel object, meaning the bot cannot find the specified channel. Common causes include:</p>
+<ul>
+<li>The provided channel ID is invalid or missing.</li>
+<li>The bot does not have access to the channel due to insufficient permissions or being removed from the server.</li>
+<li>The channel was deleted or does not exist.</li>
+</ul>
+<p>Here’s a detailed section for the provided error:</p>
+<hr>
+<doc-anchor-target id="error-unhandled-rejection-discordresterror-unknown-message">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#error-unhandled-rejection-discordresterror-unknown-message">#</doc-anchor-trigger>
+        <span>Error: <code v-pre>Unhandled Rejection DiscordRESTError: Unknown Message</code></span>
+    </h2>
+</doc-anchor-target>
+<p>When attempting to edit a message, you may encounter the following error:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">Unhandled Rejection DiscordRESTError: Unknown Message on PATCH /api/v10/channels/1199458338509959209/messages/1284589399748903094
+    at RequestHandler.request (/home/container/node_modules/oceanic.js/dist/lib/rest/RequestHandler.js:96:15)
+    at RequestHandler.authRequest (/home/container/node_modules/oceanic.js/dist/lib/rest/RequestHandler.js:81:21)
+    at RESTManager.authRequest (/home/container/node_modules/oceanic.js/dist/lib/rest/RESTManager.js:47:29)
+    at Channels.editMessage (/home/container/node_modules/oceanic.js/dist/lib/routes/Channels.js:395:30)
+    at Message.edit (/home/container/node_modules/oceanic.js/dist/lib/structures/Message.js:392:42)
+    at /home/container/AppData/Actions/sendmessage.js:1466:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 10008
+}</code></pre>
+</doc-codeblock></div>
+<hr>
+<doc-anchor-target id="solution-10">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#solution-10">#</doc-anchor-trigger>
+        <span>Solution</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li>Verify that the message ID you are trying to edit exists.</li>
+<li>Turn o nreply to interaction</li>
+<li>Ensure the bot has permission to view the channel and the message.</li>
+<li>Check if the message has been deleted.</li>
+</ol>
+<doc-anchor-target id="reason-10">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#reason-10">#</doc-anchor-trigger>
+        <span>Reason</span>
+    </h3>
+</doc-anchor-target>
+<p>This error occurs when the bot attempts to edit a message that no longer exists or is inaccessible. Common causes include:</p>
+<ul>
+<li>The message has been deleted.</li>
+<li>The message ID provided is invalid or belongs to a different channel.</li>
+<li>The bot lacks permissions to view the message&#x27;s channel or edit the message.</li>
+</ul>
+<doc-anchor-target id="error-npm-err-code-enoent">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#error-npm-err-code-enoent">#</doc-anchor-trigger>
+        <span>Error: <code v-pre>npm ERR! code ENOENT</code></span>
+    </h2>
+</doc-anchor-target>
+<p>When attempting to install a package using <code v-pre>npm</code>, you may encounter the following error:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">npm ERR! code ENOENT
+npm ERR! syscall spawn git
+npm ERR! path git
+npm ERR! errno -4058
+npm ERR! enoent An unknown git error occurred
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent
+npm ERR! A complete log of this run can be found in: C:\...</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="solution-11">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#solution-11">#</doc-anchor-trigger>
+        <span>Solution</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li><p><strong>Ensure Git is installed:</strong></p>
+<ul>
+<li>Download and install Git from <a href="https://git-scm.com/">git-scm.com</a>.</li>
+<li>During installation, make sure to add Git to your system&#x27;s PATH.</li>
+</ul>
+</li>
+<li><p><strong>Verify Git installation:</strong></p>
+<ul>
+<li>Run the following command in your terminal to confirm Git is installed:
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">git --version</code></pre>
+</doc-codeblock></div>
+</li>
+<li>If this command fails, check your PATH settings and reinstall Git if necessary.</li>
+</ul>
+</li>
+<li><p><strong>Fix npm configuration (if needed):</strong></p>
+<ul>
+<li>Check npm&#x27;s configuration for the <code v-pre>git</code> binary:
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">npm config get git</code></pre>
+</doc-codeblock></div>
+</li>
+<li>If the output is empty or incorrect, set the correct path:
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">npm config set git &quot;C:\\Program Files\\Git\\cmd\\git.exe&quot;</code></pre>
+</doc-codeblock></div>
+Replace the path with the location of your Git installation.</li>
+</ul>
+</li>
+<li><p><strong>Reinstall the package:</strong></p>
+<ul>
+<li>Once Git is properly installed and configured, retry the command:
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">npm install</code></pre>
+</doc-codeblock></div>
+</li>
+</ul>
+</li>
+</ol>
+<doc-anchor-target id="reason-11">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#reason-11">#</doc-anchor-trigger>
+        <span>Reason</span>
+    </h3>
+</doc-anchor-target>
+<p>This error occurs when npm attempts to use Git as part of the package installation process, but it cannot find the Git executable. Common causes include:</p>
+<ul>
+<li>Git is not installed on your system.</li>
+<li>Git is installed but not added to the system&#x27;s PATH.</li>
+<li>npm is configured with an invalid or nonexistent Git path.</li>
+</ul>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
