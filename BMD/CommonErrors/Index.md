@@ -196,3 +196,119 @@ Error: Request entity too large
 ### Reason
 
 Discord imposes size limits on API requests and attachments. This error occurs when the payload exceeds these limits.
+
+Here’s a detailed section for the provided error:
+
+---
+
+## Error: `Unhandled Rejection TypeError: Cannot read properties of undefined (reading 'createMessage')`
+
+When attempting to send a message to a channel, you may encounter the following error:
+
+```bash
+Unhandled Rejection TypeError: Cannot read properties of undefined (reading 'createMessage') 
+    at Object.getChannel (D:\Steam\steamapps\common\Bot Maker For Discord\bot.js:767:28) 
+    at D:\Steam\steamapps\common\Bot Maker For Discord\AppData\Actions\sendmessage.js:1433:38 
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+```
+
+### Solution
+
+1. Verify that the channel ID being used is valid and corresponds to an existing channel in your server.
+2. Ensure the bot is in the server where the channel exists and has sufficient permissions to access the channel.
+
+### Reason
+
+This error occurs because the `getChannel` method is returning `undefined` or a non-channel object, meaning the bot cannot find the specified channel. Common causes include:
+
+- The provided channel ID is invalid or missing.
+- The bot does not have access to the channel due to insufficient permissions or being removed from the server.
+- The channel was deleted or does not exist.
+
+Here’s a detailed section for the provided error:
+
+---
+
+## Error: `Unhandled Rejection DiscordRESTError: Unknown Message`
+
+When attempting to edit a message, you may encounter the following error:
+
+```bash
+Unhandled Rejection DiscordRESTError: Unknown Message on PATCH /api/v10/channels/1199458338509959209/messages/1284589399748903094
+    at RequestHandler.request (/home/container/node_modules/oceanic.js/dist/lib/rest/RequestHandler.js:96:15)
+    at RequestHandler.authRequest (/home/container/node_modules/oceanic.js/dist/lib/rest/RequestHandler.js:81:21)
+    at RESTManager.authRequest (/home/container/node_modules/oceanic.js/dist/lib/rest/RESTManager.js:47:29)
+    at Channels.editMessage (/home/container/node_modules/oceanic.js/dist/lib/routes/Channels.js:395:30)
+    at Message.edit (/home/container/node_modules/oceanic.js/dist/lib/structures/Message.js:392:42)
+    at /home/container/AppData/Actions/sendmessage.js:1466:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 10008
+}
+```
+
+---
+
+### Solution
+
+1. Verify that the message ID you are trying to edit exists.
+2. Turn o nreply to interaction
+3. Ensure the bot has permission to view the channel and the message.
+4. Check if the message has been deleted.
+
+### Reason
+
+This error occurs when the bot attempts to edit a message that no longer exists or is inaccessible. Common causes include:
+
+- The message has been deleted.
+- The message ID provided is invalid or belongs to a different channel.
+- The bot lacks permissions to view the message's channel or edit the message.
+
+## Error: `npm ERR! code ENOENT`
+
+When attempting to install a package using `npm`, you may encounter the following error:
+
+```bash
+npm ERR! code ENOENT
+npm ERR! syscall spawn git
+npm ERR! path git
+npm ERR! errno -4058
+npm ERR! enoent An unknown git error occurred
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent
+npm ERR! A complete log of this run can be found in: C:\...
+```
+
+### Solution
+1. **Ensure Git is installed:**
+   - Download and install Git from [git-scm.com](https://git-scm.com/).
+   - During installation, make sure to add Git to your system's PATH.
+
+2. **Verify Git installation:**
+   - Run the following command in your terminal to confirm Git is installed:
+     ```bash
+     git --version
+     ```
+   - If this command fails, check your PATH settings and reinstall Git if necessary.
+
+3. **Fix npm configuration (if needed):**
+   - Check npm's configuration for the `git` binary:
+     ```bash
+     npm config get git
+     ```
+   - If the output is empty or incorrect, set the correct path:
+     ```bash
+     npm config set git "C:\\Program Files\\Git\\cmd\\git.exe"
+     ```
+     Replace the path with the location of your Git installation.
+
+4. **Reinstall the package:**
+   - Once Git is properly installed and configured, retry the command:
+     ```bash
+     npm install
+     ```
+
+### Reason
+This error occurs when npm attempts to use Git as part of the package installation process, but it cannot find the Git executable. Common causes include:
+- Git is not installed on your system.
+- Git is installed but not added to the system's PATH.
+- npm is configured with an invalid or nonexistent Git path.
