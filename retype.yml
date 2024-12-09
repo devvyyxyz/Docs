@@ -24,19 +24,15 @@ outbound:
   iconAlign: left             # Icon alignment, to the left or right
   target: blank               # Custom target
                               # Use "blank" to open link in a new window
-  exclude:                    # Links or patterns to exclude
-    - example.com             # Exclude all links containing example.com
-    - example.com/docs/*      # Wildcards are valid
-  include:                    # Links or patterns to include
-    - example.com             # Only include links containing example.com
-    - example.com/docs/*      # Wildcards are valid
+  exclude:
+  include:
 
 
 # -----------------------------------------------------------------------------
 # Retype
 # -----------------------------------------------------------------------------
 
-input: .                      # Local path from this retype.yml file to the
+input: .                   # Local path from this retype.yml file to the
                               # root of your project content files
                               # See also: output
 
@@ -47,37 +43,42 @@ output: .retype               # Custom path to the output directory
 
 # -----------------------------------------------------------------------------
 
-url: https://devvyyxyz.github.io/Docs             # The base URL of your website
+url: https://docs.devvyy.xyz
 
 # -----------------------------------------------------------------------------
 
 branding:
   title: DEVVYYXYZ
   logo: assets/Logo.png
-  logoDark: assets/LogoDark.png
+  logoDark: assets/Logo.png
   logoAlign: left            # Align the logo to the right or the left
-  label:  DOCS
+  label: DOCS
                               # To remove the label, remove this config
   colors:
-    label:                    # Label colors
+    label:
       text: "#ffffff"         # Custom color for the label text
-      background: "#ff0000"   # Custom color for the label background
+      background: "#92de83"   # Custom color for the label background
 
 # -----------------------------------------------------------------------------
 
 links:                        # Custom links to add to the top bar
                               # See also: footer.links
-- text: Website
-  link: https://devvyy.xyz
-  icon: assets/Favicon.png
-
-  iconAlign: left
-  target: blank
+- text: Donate
+  link: https://docs.devvyy.xyz/donate
+  icon: heart-fill
+- text: Discord
+  link: https://docs.devvyy.xyz/discord
+  icon: assets/Logos/Discord.png
+                              # a path to a file
+  iconAlign: left           # Icon alignment, to the left or right
+  target: blank             # Custom target
+                              # Use "blank" to open link in a new window
 
 # -----------------------------------------------------------------------------
 
 footer:
-  copyright: "Devvyyxyz © All rights reserved." # A custom copyright statement
+  text: E
+  copyright: "devvyyxyz © All rights reserved." # A custom copyright statement
   links:                      # A list of links to include in the footer
                               # See also: links
     - text: License
@@ -86,6 +87,13 @@ footer:
     - text: Code of conduct
       link: CODE_OF_CONDUCT.md
       icon: code-of-conduct
+    - text: Contributing
+      link: CONTRIBUTING.md
+      icon: git-branch
+    - text: Source
+      link: https://github.com/devvyyxyz/docs
+      icon: assets/Logos/Github.png
+
 # -----------------------------------------------------------------------------
 
 cache:
@@ -100,10 +108,10 @@ cname: docs.devvyy.xyz           # The CNAME file value
 # -----------------------------------------------------------------------------
 
 edit:
-  repo: "https://github.com/devvyyxyz/Docs"                    # The URL to source files for this project
+  repo: "https://github.com/devvyyxyz/docs"                    # The URL to source files for this project
   base: ""                    # Optional base path to a directory within repo
-  branch: "main"                  # Point to a custom branch within the repo
-  label: "Edit this website"     # A custom label for the generated link
+  branch: "dev"                  # Point to a custom branch within the repo
+  label: "Edit this page"     # A custom label for the generated link
 
 # -----------------------------------------------------------------------------
 
@@ -120,7 +128,7 @@ exclude:                      # Files or folders to exclude from the build
 
 # -----------------------------------------------------------------------------
 
-favicon: assets/Favicon.png   # Path to a custom favicon, or
+favicon: assets/Icon.ico
                               # just put a favicon.ico in your project root
 
 # -----------------------------------------------------------------------------
@@ -147,26 +155,24 @@ integrations:
     enabled: true             # false to disable using Gravatar images
     default: mp               # What Gravatar profile image to use
   plausible:                  # Plausible.io integration
-    domain: domain1.com,domain2.com # Your plausible domain(s)
+    domain: docs.devvyy.xyz,devvyyxyz-bot.github.io/docs/ # Your plausible domain(s)
     host: plausible.example.com     # Custom Plausible host name
 
 # -----------------------------------------------------------------------------
 
 markdown:                     # Markdown configuration options
-  lineBreaks: hard            # Switch between `soft` and `hard` line breaks
+  lineBreaks: soft            # Switch between `soft` and `hard` line breaks
 
 # -----------------------------------------------------------------------------
 
 meta:
-  title: " | DEVVYYXYZ"         # Appended to the <title> element on all pages
+  title: " | DOCS"         # Appended to the <title> element on all pages
 
 # -----------------------------------------------------------------------------
 
-search:
+search:                       # Custom configuration of the website search
   hotkeys:
-    - "/"
-    - "="
-    - "+"
+    - "/"                     # Keyboard key to set focus in the search field
                               # Default is "k"
   maxResults: 20              # Max number of search results to render
   minChars: 2                 # Min characters required to trigger a search

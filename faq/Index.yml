@@ -1,0 +1,23 @@
+author:
+  name: 
+  avatar: 
+  email: 
+category: [FAQ]
+tags: [faq, docs, question, answer]
+
+icon: question
+label: FAQ
+title: 
+description: 
+image: ../assets/Banners/FAQ.png
+
+meta:
+  title:
+
+expanded: false
+templating: false
+layout: defualt
+visibility: public
+order: 96
+redirect:
+route: faq
