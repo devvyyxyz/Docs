@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://devvyyxyz.github.io/Docs/sitemap.xml.gz
+Sitemap: https://docs.devvyy.xyz/sitemap.xml.gz
