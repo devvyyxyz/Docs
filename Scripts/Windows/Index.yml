@@ -2,11 +2,11 @@ author:
   name: 
   avatar: 
   email: 
-category: [Linux]
-tags: [linux, docs]
+category: [Windows]
+tags: [windows, docs]
 
 icon: dot-fill
-label: Linux
+label: Windows
 title: 
 description: 
 image: ../assets/WordmarkBackground.png
@@ -20,4 +20,4 @@ layout: defualt
 visibility: public
 order: 
 redirect:
-route: linux
+route: scripts/windows
