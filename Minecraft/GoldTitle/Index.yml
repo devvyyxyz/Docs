@@ -1,0 +1,23 @@
+author:
+  name: 
+  avatar: 
+  email: 
+category: [Gold title]
+tags: [goldtitle, docs]
+
+icon: https://cdn.modrinth.com/data/91xoHF5V/ae14cff0135410a239f1a53d6fb2205c7f37924e_96.webp
+label: Gold title
+title: 
+description: 
+image: ../assets/WordmarkBackground.png
+
+meta:
+  title:
+
+expanded: false
+templating: false
+layout: defualt
+visibility: public
+order: 
+redirect:
+route: goldtitle

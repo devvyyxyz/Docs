@@ -1,0 +1,23 @@
+author:
+  name: 
+  avatar: 
+  email: 
+category: [Low fire]
+tags: [lowfire, docs]
+
+icon: https://cdn.modrinth.com/data/xFSWIMEj/45243ef5eb7505ad69c47066321d4772b6ef6dce_96.webp
+label: Low fire
+title: 
+description: 
+image: ../assets/WordmarkBackground.png
+
+meta:
+  title:
+
+expanded: false
+templating: false
+layout: defualt
+visibility: public
+order: 
+redirect:
+route: lowfire

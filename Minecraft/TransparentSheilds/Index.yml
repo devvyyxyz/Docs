@@ -1,0 +1,23 @@
+author:
+  name: 
+  avatar: 
+  email: 
+category: [Transparent sheilds]
+tags: [transparentsheilds, docs]
+
+icon: https://cdn.modrinth.com/data/KaOmkDj0/a307270ff0e63c43159af7173e2c0e3203edecfe_96.webp
+label: Transparent sheilds
+title: 
+description: 
+image: ../assets/WordmarkBackground.png
+
+meta:
+  title:
+
+expanded: false
+templating: false
+layout: defualt
+visibility: public
+order: 
+redirect:
+route: transparentsheilds

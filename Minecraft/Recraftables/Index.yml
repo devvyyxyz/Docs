@@ -1,0 +1,23 @@
+author:
+  name: 
+  avatar: 
+  email: 
+category: [Recraftables]
+tags: [recraftables, docs]
+
+icon: https://cdn.modrinth.com/data/BBNKnky3/71357de86e1f022da4e9c10151ec419e13b468c7_96.webp
+label: Recraftables
+title: 
+description: 
+image: ../assets/WordmarkBackground.png
+
+meta:
+  title:
+
+expanded: false
+templating: false
+layout: defualt
+visibility: public
+order: 
+redirect:
+route: recraftables
