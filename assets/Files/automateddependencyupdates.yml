@@ -1,0 +1,19 @@
+name: Automated Dependency Updates
+
+on:
+  schedule:
+    - cron: "0 3 * * 1" # Weekly on Monday at 3:00 AM UTC
+
+jobs:
+  dependabot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run Dependabot
+        uses: dependabot/fetch-metadata@v1
+        with:
+          package-manager: "npm_and_yarn"
+          directory: "/"
+          target-branch: "main"
