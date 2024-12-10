@@ -1,0 +1,23 @@
+author:
+  name: 
+  avatar: 
+  email:
+category: [Introduction]
+tags: [techstack, docs, contributors]
+
+icon: dot-fill
+label: Tech Stack
+title: 
+description: 
+image: ../assets/Banners/Dev0.png
+
+meta:
+  title:
+
+expanded: false
+templating: false
+layout: defualt
+visibility: public
+order:
+redirect:
+route: intro/techstack

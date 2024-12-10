@@ -1,0 +1,23 @@
+author:
+  name: 
+  avatar: 
+  email: 
+category: [Roadmap]
+tags: [roadmap, docs]
+
+icon: dot-fill
+label: Roadmap
+title: 
+description: 
+image: ../assets/WordmarkBackground.png
+
+meta:
+  title:
+
+expanded: false
+templating: false
+layout: defualt
+visibility: hidden
+order: 
+redirect:
+route: roadmap
