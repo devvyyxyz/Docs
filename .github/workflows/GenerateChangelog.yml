@@ -17,11 +17,7 @@ jobs:
       - name: Set up Ruby (for changelog generator)
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.0'  # Keep Ruby 2.7 or change to 3.0 if needed
-
-      - name: Install compatible public_suffix
-        run: |
-          gem install public_suffix -v 5.1.1  # Install compatible version for Ruby 2.7
+          ruby-version: '3.0'  # Ruby 3.0, as required by dependencies
 
       - name: Install dependencies
         run: |
@@ -29,9 +25,9 @@ jobs:
 
       - name: Generate Changelog
         run: |
-          github_changelog_generator --user ${{ github.repository_owner }} --project ${{ github.repository }} --output CHANGELOG.md
+          github_changelog_generator --user ${{ github.repository_owner }} --project Docs --output CHANGELOG.md
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Required for API access to generate changelog from PRs
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Pass the token for authentication
 
       - name: Commit and push changelog
         run: |
