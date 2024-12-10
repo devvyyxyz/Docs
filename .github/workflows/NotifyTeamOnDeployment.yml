@@ -1,0 +1,21 @@
+name: Notify Team on Deployment
+
+on:
+  deployment_status:
+    types:
+      - success
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Slack notification
+        uses: slackapi/[email protected]
+        with:
+          payload: |
+            {
+              "channel": "#deployments",
+              "text": "Deployment to ${{ github.ref }} was successful!"
+            }
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
