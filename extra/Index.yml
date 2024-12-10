@@ -17,7 +17,7 @@ meta:
 expanded: false
 templating: false
 layout: defualt
-visibility: public
+visibility: hidden
 order: 97
 redirect:
 route: extra
