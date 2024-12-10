@@ -17,7 +17,7 @@ jobs:
       - name: Set up Ruby (for changelog generator)
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.7'  # Keep Ruby 2.7 or change to 3.0 if needed
+          ruby-version: '3.0'  # Keep Ruby 2.7 or change to 3.0 if needed
 
       - name: Install compatible public_suffix
         run: |
