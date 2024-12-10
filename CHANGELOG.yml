@@ -1,0 +1,23 @@
+author:
+  name: 
+  avatar: 
+  email: 
+category: [Main]
+tags: [changelog, info, basic]
+
+icon: dot-fill
+label: Changelog
+title:
+description:
+image: assets/WordmarkBackground.png
+
+meta:
+  title:
+
+expanded: false
+templating: false
+layout: defualt
+visibility: public
+order:
+redirect:
+route:
