@@ -1,4 +1,4 @@
-<img align="left" width="250" height="auto" src="../../assets/Logo.png">
+<img align="left" width="250" height="auto" src="../assets/Logo.png">
 
 ### Hey I'm Devvyyxyz
 
