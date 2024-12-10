@@ -1,0 +1,17 @@
+name: Daily Database Backup
+
+on:
+  schedule:
+    - cron: "0 2 * * *" # Daily at 2:00 AM UTC
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Backup database
+        run: |
+          pg_dump -h ${{ secrets.DB_HOST }} -U ${{ secrets.DB_USER }} ${{ secrets.DB_NAME }} > backup.sql
+          aws s3 cp backup.sql s3://${{ secrets.S3_BUCKET_NAME }}/backup-$(date +%F).sql
