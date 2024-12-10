@@ -1,5 +1,3 @@
-# DEVVYYXYZ DOCS
-
 ![DEVVYYXYZ](assets/WordmarkBackground.png)
 
 ## Navigation
@@ -24,3 +22,4 @@ If you are new, start with the Introduction category to understand what these pr
 !!! Looking for specific guidance?
 Check out the specific category for practical help tailored to your needs.
 !!!
+

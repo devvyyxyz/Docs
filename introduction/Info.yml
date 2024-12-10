@@ -1,0 +1,23 @@
+author:
+  name: 
+  avatar: 
+  email:
+category: [Introduction]
+tags: [introduction, docs, info]
+
+icon: dot-fill
+label: Info
+title: 
+description: 
+image: ../assets/Banners/Dev0.png
+
+meta:
+  title:
+
+expanded: false
+templating: false
+layout: defualt
+visibility: public
+order:
+redirect:
+route: intro/info
