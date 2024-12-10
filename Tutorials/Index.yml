@@ -1,0 +1,23 @@
+author:
+  name: 
+  avatar: 
+  email: 
+category: [Tutorials]
+tags: [tutorials, docs]
+
+icon: dot-fill
+label: Tutorials
+title: 
+description: 
+image: ../assets/WordmarkBackground.png
+
+meta:
+  title:
+
+expanded: false
+templating: false
+layout: defualt
+visibility: hidden
+order: 
+redirect:
+route: tutorials
