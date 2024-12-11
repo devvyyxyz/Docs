@@ -32,7 +32,7 @@ How to access beta versions of games on Steam, allowing you to try upcoming feat
 7. **Launch the Beta Version**
    - Once the download is complete, click **Play** to launch the game in its beta state.
 
-## Additional Notes
-
+!!!Additional Notes
 - Not all games offer beta versions. If the Betas tab is empty or no options are listed, the game developer has not made any beta branches available or they are private.
 - You can switch back to the main game version anytime by choosing "None" in the Betas dropdown menu.
+!!!
