@@ -22,17 +22,10 @@ jobs:
       - name: Install dependencies
         run: |
           gem install github_changelog_generator
-          gem install faraday-retry  # Required for Faraday v2.0+
 
       - name: Generate Changelog
         run: |
-          github_changelog_generator \
-            --user ${{ github.repository_owner }} \
-            --project Docs \
-            --output CHANGELOG.md \
-            --unreleased-only \
-            --no-issues \
-            --max-issues 100
+          github_changelog_generator --user ${{ github.repository_owner }} --project Docs --output CHANGELOG.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Pass the token for authentication
 
