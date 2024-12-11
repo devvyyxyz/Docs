@@ -1,3 +1,5 @@
+How to access beta versions of games on Steam, allowing you to try upcoming features or experimental updates before they're officially released. Follow the step-by-step instructions to opt into a game's beta branch.
+
 ## How to Download a Beta for any game
 
 1. **Open the Steam Client**
@@ -29,8 +31,6 @@
 
 7. **Launch the Beta Version**
    - Once the download is complete, click **Play** to launch the game in its beta state.
-
----
 
 ## Additional Notes
 
