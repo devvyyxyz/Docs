@@ -1,0 +1,23 @@
+author:
+  name: 
+  avatar: 
+  email: 
+category: [Steam]
+tags: [steam, docs]
+
+icon: dot-fill
+label: Steam
+title: 
+description: 
+image: ../assets/WordmarkBackground.png
+
+meta:
+  title:
+
+expanded: false
+templating: false
+layout: defualt
+visibility: public
+order: 
+redirect:
+route: steam
