@@ -30,7 +30,7 @@ jobs:
             --project Docs \
             --output CHANGELOG.md \
             --issues-label "closed issues" \
-            --pull-requests-label "merged pull requests" \
+            --pr-label "merged pull requests" \
             --enhancement-label "enhancements" \
             --bug-label "bugs" \
             --breaking-label "breaking changes" \
