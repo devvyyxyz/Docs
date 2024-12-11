@@ -22,6 +22,7 @@ jobs:
       - name: Install dependencies
         run: |
           gem install github_changelog_generator
+          gem install faraday-retry  # Required for Faraday v2.0+
 
       - name: Generate Changelog
         run: |
@@ -32,7 +33,7 @@ jobs:
             --issues-label "closed issues" \
             --pr-label "merged pull requests" \
             --enhancement-label "enhancements" \
-            --bugs-label "bugs" \  # Fixed here
+            --bugs-label "bugs" \
             --breaking-label "breaking changes" \
             --add-issues-wo-labels \
             --unreleased-only \
