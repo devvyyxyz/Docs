@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.3.7](https://github.com/devvyyxyz/Docs/tree/v1.3.7) (2024-12-11)
+
+[Full Changelog](https://github.com/devvyyxyz/Docs/compare/v1.3.5...v1.3.7)
+
 ## [v1.3.5](https://github.com/devvyyxyz/Docs/tree/v1.3.5) (2024-12-10)
 
 [Full Changelog](https://github.com/devvyyxyz/Docs/compare/v1.3.3...v1.3.5)
