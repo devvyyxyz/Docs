@@ -25,7 +25,18 @@ jobs:
 
       - name: Generate Changelog
         run: |
-          github_changelog_generator --user ${{ github.repository_owner }} --project Docs --output CHANGELOG.md
+          github_changelog_generator \
+            --user ${{ github.repository_owner }} \
+            --project Docs \
+            --output CHANGELOG.md \
+            --issues-label "closed issues" \
+            --pull-requests-label "merged pull requests" \
+            --enhancement-label "enhancements" \
+            --bug-label "bugs" \
+            --breaking-label "breaking changes" \
+            --add-issues-wo-labels \
+            --unreleased-only \
+            --max-issues 100
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Pass the token for authentication
 
