@@ -1,4 +1,4 @@
-<img align="left" width="250" height="auto" src="../assets/Logo.png">
+<img align="left" width="250" height="auto" src="https://avatars.githubusercontent.com/u/132696257">
 
 ### Hey I'm Devvyyxyz
 
@@ -6,6 +6,7 @@ Hey, Bonjour, 你好 i’m Devvyy, A software and cyber security developer! Welc
 
 [![](https://komarev.com/ghpvc/?username=devvyyxyz&color=007bff&label=Profile+Views&style=for-the-badge)]()
 
+<br>
 <br>
 <br>
 
@@ -31,16 +32,16 @@ Here’s the full list of technologies I’ve worked with over the years. It’s
 
 Feel free to explore my projects on [GitHub](https://github.com/devvyyxyz) and dive deeper into the technologies I work with.
 
-## My favorite GitHub repositories
+## My favourite GitHub repositories
 
--![](https://github-readme-stats.vercel.app/api/pin/?username=devvyyxyz&repo=noodle-bot&bg_color=0d1117&title_color=58a6ff&text_color=8b949e&icon_color=8b949e&hide_border=true&show_owner=true)-
--![](https://github-readme-stats.vercel.app/api/pin/?username=devvyyxyz&repo=modrinth-text-packs&bg_color=0d1117&title_color=58a6ff&text_color=8b949e&icon_color=8b949e&hide_border=true&show_owner=true)-
-
+![](https://github-readme-stats.vercel.app/api/pin/?username=devvyyxyz&repo=docs&bg_color=0d1117&title_color=58a6ff&text_color=8b949e&icon_color=8b949e&hide_border=true&show_owner=true)
+![](https://github-readme-stats.vercel.app/api/pin/?username=devvyyxyz&repo=bmd-action-maker&bg_color=0d1117&title_color=58a6ff&text_color=8b949e&icon_color=8b949e&hide_border=true&show_owner=true)
+![](https://github-readme-stats.vercel.app/api/pin/?username=devvyyxyz&repo=cellular-automata&bg_color=0d1117&title_color=58a6ff&text_color=8b949e&icon_color=8b949e&hide_border=true&show_owner=true)
 
 ## Github Stats
   
---![](https://github-readme-streak-stats.herokuapp.com/?user=devvyyxyz&hide_border=true&background=0D1117&currStreakLabel=FFFFFF&sideLabels=FFFFFF&currStreakNum=FFFFFF&dates=FFFFFF&sideNums=FFFFFF&fire=006BD6&ring=006BD6&stroke=FFFFFFFF)--
+![](https://github-readme-streak-stats.herokuapp.com/?user=devvyyxyz&hide_border=true&background=0D1117&currStreakLabel=FFFFFF&sideLabels=FFFFFF&currStreakNum=FFFFFF&dates=FFFFFF&sideNums=FFFFFF&fire=006BD6&ring=006BD6&stroke=FFFFFFFF)
   
---![](https://github-readme-stats.vercel.app/api?username=devvyyxyz&hide_border=true&hide=issues,prs&count_private=true&show_owner=true&show_icons=true&bg_color=0d1117&title_color=ffffff&text_color=ffffff&icon_color=006bd6)--
+![](https://github-readme-stats.vercel.app/api?username=devvyyxyz&hide_border=true&hide=issues,prs&count_private=true&show_owner=true&show_icons=true&bg_color=0d1117&title_color=ffffff&text_color=ffffff&icon_color=006bd6)
   
---![](https://github-readme-stats.vercel.app/api/top-langs/?username=devvyyxyz&hide_border=true&layout=compact&card_width=445&bg_color=0d1117&title_color=ffffff&text_color=ffffff&icon_color=006bd6)--
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=devvyyxyz&hide_border=true&layout=compact&card_width=445&bg_color=0d1117&title_color=ffffff&text_color=ffffff&icon_color=006bd6)
